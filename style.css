@@ -1,0 +1,58 @@
+body {
+    background-color: hsl(219, 70%, 41%); 
+    color: white;              
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+button {
+    background-color: #17abe6;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Remove as bolinhas da lista e coloca os itens lado a lado */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Se não couber na tela, ele pula para a linha de baixo */
+    justify-content: center;
+    gap: 20px; /* Espaço entre cada amigo */
+}
+
+/* Organiza o nome e a foto de cada amigo em pé (um sobre o outro) */
+.lista-amigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Um fundo leve para destacar */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card-amigo img {
+    margin-top: 10px;
+    border-radius: 50%; /* Deixa a foto redonda, estilo perfil de Discord */
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumenta o destaque do nome da distro */
+    color: #ffffff;
+}
+
+h2 {
+    color: #17abe6; /* Usa o azul dos seus botões nos subtítulos para combinar */
+    font-size: 1.8rem;
+}
