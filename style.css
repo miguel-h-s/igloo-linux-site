@@ -56,3 +56,17 @@ h2 {
     color: #17abe6; /* Usa o azul dos seus botões nos subtítulos para combinar */
     font-size: 1.8rem;
 }
+
+/* No seu arquivo style.css */
+.logo-site {
+    display: block;
+    margin: 20px auto; /* Dá espaço em cima e embaixo e centraliza */
+    max-width: 100%;   /* Garante que ela não saia da tela no celular */
+    height: auto;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5)); /* Adiciona uma sombra suave na logo */
+}
+
+.logo-site:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
